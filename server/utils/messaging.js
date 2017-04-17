@@ -8,6 +8,20 @@ var generateMessage = (From, text)=>{
 	
 };
 
+
+
+var generateLocationMessage = (From, latitude, longitude)=>{
+	
+	return{
+		From:From,
+		url:'https://www.google.com/maps?q='+latitude+","+longitude,
+		createdAt: new Date().getTime()
+	};
+	
+};
+
+
 module.exports={
-	generateMessage
+	generateMessage,
+	generateLocationMessage
 }
