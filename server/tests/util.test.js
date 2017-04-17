@@ -43,7 +43,7 @@ describe('generateLocationMessage', ()=>{
 	
 	it('should be from David', ()=>{
 		expect(result.From).toBe(From);
-		expect(result.From).toBeA('text');
+		expect(result.From).toBeA('string');
 	});
 	
 	
