@@ -29,7 +29,7 @@
 	var messages = jQuery('#messages');
 		var newMessage = jQuery(messages.children('li:last-child'));
 		
-			var clientHeight = messages.prop('clientHeight');
+		var clientHeight = messages.prop('clientHeight');
 		var scrollTop = messages.prop('scrollTop');
 		var scrollHeight = messages.prop('scrollHeight');
 		var newMessageHeight = newMessage.innerHeight();
