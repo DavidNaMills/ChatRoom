@@ -106,7 +106,6 @@
 		var name = jQuery('[name=message]');
 		
 		socket.emit('createMessage',{
-			From: 'User',
 			text: name.val()
 		}, function(){
 			name.val('');
